@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chuyển đổi tiền tệ</title>
+    </head>
+    <body>
+        <h2>Chuyển đổi tiền tệ sang Việt Nam Đồng (VND)</h2>
+        <form action="DoiTienServlet" method="sotien">
+            <label for="sotien">Số tiền:</label>
+            <input type="number" id="sotien" name="sotien" step="any" required>
+
+            <label for="ngoaite">Chọn loại ngoại tệ:</label>
+            <select id="ngoaite" name="ngoaite">
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+                <option value="JPY">JPY</option>
+                <option value="AUD">AUD</option>
+            </select>
+
+            <input type="submit" value="Chuyển đổi">
+        </form>
+    </body>
+</html>
+
